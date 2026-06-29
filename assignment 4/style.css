@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #3923e2;
+    color: #010004;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background: #11e3c0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #09101d;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #6b9ccc;
+    padding-bottom: 0.5rem;
+}
+
+.sub-section {
+    margin-bottom: 1.5rem;
+}
+
+.sub-section:last-child {
+    margin-bottom: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #0471e6;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #e0b91a;
+}
+
+#chat-messages {
+    list-style-type: none;
+    margin-top: 1rem;
+    max-height: 150px;
+    overflow-y: auto;
+    background: #0a0e12;
+    border-radius: 4px;
+}
+
+#chat-messages li {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #edf2f7;
+}
+
+#chat-messages li:last-child {
+    border-bottom: none;
+}
+
+button {
+    background-color: #167ce2;
+    color: rgb(255, 248, 248);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #c01e1e;
+}
+
+.btn-danger {
+    background-color: #e53e3e;
+}
+
+.btn-danger:hover {
+    background-color: #c53030;
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#alert-msg {
+    display: none;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background-color: #0c0c0b;
+    color: #c05621;
+    border-left: 4px solid #dd6b20;
+    border-radius: 4px;
+}
+
+.counter-box {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#counter-display {
+    color: #04286f;
+}
+
+.welcome-banner {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#greeting-name {
+    color: #062775;
+}
+
+.form-inline {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-inline input {
+    flex: 1;
+}
